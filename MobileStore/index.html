@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Acme Mobile Store</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="module" src="./app.js"></script>
+		<!--
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		-->
+		<link rel="stylesheet" href="./style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<span class="navHeading"> Acme Store </span>
+			<!--<span class="dropdown">More <i class="fa fa-caret-down"></i></span> -->
+		</nav>
+		<div class="container">
+			<div class="sidepanel" id="sidePanel">
+				<label class="subheadingPanel">Manufacturer</label>
+				<div class="checkboxStack manufacturerStack">
+					<!-- container elem. for manufacturer choice checkboxes-->
+				</div>
+				<label class="subheadingPanel">Storage capacity</label>
+				<div class="checkboxStack storageStack">
+					<!-- container elem. for storage capacity choice checkboxes-->
+				</div>
+				<label class="subheadingPanel">Operating System</label>
+				<div class="checkboxStack osStack">
+					<!-- container elem. for operating system choice checkboxes-->
+				</div>
+				<button name="clearFilter" id="clearFilter">
+					Clear Filters
+				</button>
+			</div>
+			<div class="containerItems">
+				<!-- container elem. for mobile phone cards-->
+			</div>
+			<div id="detailsModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="detailedImg" />
+				<div id="caption"></div>
+			</div>
+		</div>
+	</body>
+</html>
