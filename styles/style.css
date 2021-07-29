@@ -1,0 +1,320 @@
+.navbar {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	height: 10vmin;
+	background-color: #011333;
+	width: 97vmax;
+	color: aquamarine;
+	font-size: 2em;
+	padding-left: 4vmin;
+}
+
+.navbar a {
+	float: left;
+	color: aquamarine;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+	border: none;
+	outline: none;
+	color: aquamarine;
+	padding: 14px 16px;
+	background: inherit;
+	font: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-image: linear-gradient(rgb(19, 20, 75), rgb(5, 39, 54));
+	width: 100%;
+	left: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+	background: inherit;
+	padding: 16px;
+	color: cornflowerblue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+	background: inherit;
+	height: 250px;
+}
+
+/* Style links inside the columns */
+.column a {
+	float: none;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+	color: aquamarine;
+	border: solid 1px cornflowerblue;
+	display: block;
+	text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+	background-color: teal;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+section {
+	display: none;
+}
+section:target {
+	display: block;
+}
+
+a {
+	color: aquamarine;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.navHeading {
+	cursor: pointer;
+	margin-right: 100px;
+}
+
+.pricedesc {
+	align-self: flex-end;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.sidepanel {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	width: 12vmax;
+	height: 32vmax;
+	padding: 0 5vmin;
+	border-radius: 3px;
+	background: #e3e2f1;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	font-size: 1.2vmax;
+	color: #0f032b;
+}
+
+.containerItems {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.card {
+	display: flex;
+	margin: 5px;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 17vmax;
+	height: 30vmax;
+	padding-top: 3vmin;
+	padding-bottom: 3vmin;
+	padding-left: 3vmin;
+	padding-right: 3vmin;
+	border-radius: 3px;
+	background: #dbf5fc;
+	box-shadow: 5px 4px 15px #052050;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.1vmax;
+	color: #020e20;
+}
+
+.card:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.img-overview {
+	display: flex;
+	height: 12vmax;
+	object-fit: contain;
+}
+
+.checkboxStack {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.checkboxRow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.subheadingPanel {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.3vmax;
+	color: #0f032b;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	background-color: #03122ba9;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: rgb(199, 251, 253);
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content,
+#caption {
+	animation-name: zoom;
+	animation-duration: 1.5s;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #b7e1fcda;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.spaLink {
+	text-decoration: none;
+	color: rgb(4, 4, 59);
+	font-size: 25px;
+	border: solid 3px rgb(3, 26, 32);
+	border-radius: 3px;
+}
+.spaLink:hover {
+	background-color: antiquewhite;
+}
+
+li {
+	margin: 20px;
+	display: inline-block;
+}
+li:hover {
+	transform: translate(15px, 5px);
+}
+.parallax {
+	background-image: url("/images/overview/mission.jpg");
+
+	min-height: 400px;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.slidecontainer {
+	width: 40%;
+}
+
+.slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 40%;
+	height: 10px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+#submitMobNum:focus {
+	color: maroon;
+	background-color: antiquewhite;
+}

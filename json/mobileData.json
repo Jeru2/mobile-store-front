@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Nokia Lumia",
+        "manufacturer": "Nokia",
+        "storage": "16GB",
+        "camera": "12MP",
+        "price": "15000",
+        "os": "Symbian",
+        "image": "/images/overview/lumia.jpg",
+        "enlargedImage": "/images/detailed/lumia_en.jpg",
+        "detailsText": "details...."
+    },
+    {
+        "name": "Samsung S10",
+        "manufacturer": "Samsung",
+        "storage": "32GB",
+        "camera": "16MP",
+        "price": "20000",
+        "os": "Android",
+        "image": "/images/overview/s10.jpg",
+        "enlargedImage": "/images/detailed/s10_en.jpg",
+        "detailsText": "details...."
+    },
+    {
+        "name": "LG G8",
+        "manufacturer": "LG",
+        "storage": "8GB",
+        "camera": "10MP",
+        "price": "18000",
+        "os": "Android",
+        "image": "/images/overview/g8.jpg",
+        "enlargedImage": "/images/detailed/g8_en.jpg",
+        "detailsText": "details...."
+    },
+    {
+        "name": "Iphone X",
+        "manufacturer": "Apple",
+        "storage": "32GB",
+        "camera": "21MP",
+        "price": "35000",
+        "os": "IOS",
+        "image": "/images/overview/iphoneX.jpg",
+        "enlargedImage": "/images/detailed/iphoneX_en.jpg",
+        "detailsText": "details...."
+    },
+    {
+        "name": "Pixel 5",
+        "manufacturer": "Google",
+        "storage": "32GB",
+        "camera": "13MP",
+        "price": "25000",
+        "os": "Android",
+        "image": "/images/overview/pixel.jpg",
+        "enlargedImage": "/images/detailed/pixel_en.jpg",
+        "detailsText": "details...."
+    },
+    {
+        "name": "Note 20 Ultra",
+        "manufacturer": "Samsung",
+        "storage": "32GB",
+        "camera": "23MP",
+        "price": "45000",
+        "os": "Android",
+        "image": "/images/overview/note20ultra.jpg",
+        "enlargedImage": "/images/detailed/note20ultra_en.jpg",
+        "detailsText": "details...."
+    }
+]
